@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	id="WebApp_ID" version="6.0">
+	<display-name>1016_SpringBoot_Day02_Listener_Filter</display-name>
+
+	<!-- Listener, Filter 선택 후, 만들면 알아서 web.xml에 등록된다. -->
+	<listener>
+		<listener-class>com.ssafy.listener.MyListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>MSG</param-name>
+		<param-value>MSG 파라미터의 초기값은 지금 설정한 이 문장이다.</param-value>
+	</context-param>
+
+
+	<filter>
+		<display-name>MyFilter</display-name>
+		<filter-name>MyFilter</filter-name>
+		<filter-class>com.ssafy.filter.MyFilter</filter-class>
+		<init-param> <!-- 이 서블릿(필터)에만 적용되는 초기값 설정 -->
+			<param-name>encoding</param-name>
+			<param-value>UTF-16</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>MyFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<!-- <url-pattern>/MyFilter</url-pattern> url이 MyFilter 일때만 적용하겠다. -->
+	</filter-mapping>
+	
+	<filter>
+		<display-name>MyFilter2</display-name>
+		<filter-name>MyFilter2</filter-name>
+		<filter-class>com.ssafy.filter.MyFilter2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MyFilter2</filter-name>
+		<url-pattern>/*</url-pattern>
+		<!-- <url-pattern>/MyFilter</url-pattern> url이 MyFilter 일때만 적용하겠다. -->
+	</filter-mapping>
+</web-app>
