@@ -10,6 +10,6 @@ public class HelloController {
 	@GetMapping("/hello")
 	public String hello(Model model) {
 		model.addAttribute("msg","이 메세지는 hello controller에서부터 옵니당");
-		return "hello";
+		return "hello"; // prefix + hello + .jsp
 	}
 }
