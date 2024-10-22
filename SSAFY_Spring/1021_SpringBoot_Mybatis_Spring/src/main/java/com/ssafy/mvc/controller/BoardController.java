@@ -34,7 +34,10 @@ public class BoardController {
 		for(Board board : boards) {
 			System.out.println(board.toString());
 		}
+		//////////////////////////////////
 		model.addAttribute("boards",boards);
+		//포워드 : 
+		//리다이렉트 : 
 		return "/board/list";
 	}
 	
