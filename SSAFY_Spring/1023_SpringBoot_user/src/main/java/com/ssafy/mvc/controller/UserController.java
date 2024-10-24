@@ -31,12 +31,5 @@ public class UserController {
 		// 클라이언트한테 너 다시 list라는 get요청을 보내
 		// 클라이언트 pc에서 
 	}
-	@PostMapping("/regist")
-	public String doRegist(@ModelAttribute User user) {
-		//TODO: process POST request
-		
-		return entity;
-	}
-	
 	
 }
