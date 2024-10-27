@@ -23,7 +23,7 @@ public class FileController {
 		this.resourceLoader = resourceLoader;
 	}
 
-	@PostMapping("/singleFileUpload")
+	@PostMapping("/singleFileUpload")		//input 태그의 name 값과 동일해야함
 	public String singleFileUpload(@RequestParam("file") MultipartFile file, Model model) throws IllegalStateException, IOException {
 
 		if (file != null && file.getSize() > 0) {

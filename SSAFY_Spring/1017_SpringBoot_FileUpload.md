@@ -109,11 +109,9 @@
 		return "/regist";
     }
 ```
-```
 
 **multiFileUpload**
-```
-@PostMapping("/multiFileUpload")
+```@PostMapping("/multiFileUpload")
 	public String multiFileUpload(@RequestParam("file") MultipartFile[] files, Model model) throws IllegalStateException, IOException {
 		
 		if(files.length > 0) {

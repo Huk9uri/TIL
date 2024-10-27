@@ -42,4 +42,11 @@ public class UserController {
 			return "user/viewInfo";
 		}
 		
+		@PostMapping("/regist")
+		public String doRegist(@ModelAttribute User user) {
+			
+			return entity;
+		}
+		
+		
 }

@@ -15,4 +15,8 @@
 		WHERE u.curriculum_code = c.code
 	</select>
 	
+	<insert id="insert" parameterType="User">
+	INSERT INTO users (id,pw) values ()
+	</insert>
+	
 </mapper>

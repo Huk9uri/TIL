@@ -8,7 +8,7 @@ import com.ssafy.mvc.model.dto.User;
 public interface UserDao {
 
 	// 1. 회원 추가
-	public void insertUser(User user);
+	public void insert(User user);
 	// 2. 회원 목록
 	public List<User> selectAll();
 	// 3. 회원 조회

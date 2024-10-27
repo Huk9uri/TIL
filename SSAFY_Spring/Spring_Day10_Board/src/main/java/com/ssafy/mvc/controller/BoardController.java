@@ -30,6 +30,12 @@ public class BoardController {
 		// 서비스를 통해서 게시글들을 가져와야 한다.
 		List<Board> boards = boardService.getBoardList();
 		model.addAttribute("boards", boards);
+		
+		// list라는 boardlist를 boards 넣어서
+		// 모델 바구니 담아서
+		// board/ list.jsp 보냈잖아
+		
+		
 		return "/board/list";
 	}
 	
@@ -70,6 +76,7 @@ public class BoardController {
 		// 삭제를 하고 목록 화면으로 보내겠다.
 		
 		return "redirect:list";
+		// 클라이언트에게 list get 방식 요청 해 
 	}
 	
 	@GetMapping("/updateform")

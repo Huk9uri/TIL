@@ -33,7 +33,6 @@ public class UserController {
 	}
 	@PostMapping("/regist")
 	public String doRegist(@ModelAttribute User user) {
-		//TODO: process POST request
 		
 		return entity;
 	}
