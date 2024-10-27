@@ -19,7 +19,7 @@
 					<option value="일반">일반</option>
 				</select>
 	캠퍼스 : <select name= "region" id="region">
-					<option value="서울">"서울"</option>
+					<option value="서울">서울</option>
 					<option value="광주">광주</option>
 					<option value="대전">대전</option>
 					<option value="구미">구미</option>
