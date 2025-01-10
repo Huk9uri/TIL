@@ -1,0 +1,12 @@
+.App{
+  display: flex;
+  height: 100vh;
+}
+
+.MemoContainer{
+  background-color: aquamarine;
+}
+
+.SideBar{
+  border: 1px blue solid;
+}
